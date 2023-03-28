@@ -86,3 +86,11 @@ variable "private_endpoint_sa_subresource_names" {
   type        = list(string)
   description = "A list of subresource names which the Private Endpoint is able to connect to."
 }
+
+variable "container_info" {
+  type = map(object({
+    access_type = string
+  }))
+  description = "Details about the containers that needs to be created"
+  default     = {}
+}

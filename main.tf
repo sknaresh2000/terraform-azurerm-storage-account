@@ -41,7 +41,7 @@ resource "azurerm_private_endpoint" "pe" {
 
 resource "azurerm_storage_container" "container" {
   for_each              = var.container_info
-  name                  = each.value.name
+  name                  = each.key
   storage_account_name  = azurerm_storage_account.sa.name
-  container_access_type = each.value.container_access_type
+  container_access_type = each.value.access_type
 }
