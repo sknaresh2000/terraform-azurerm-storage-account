@@ -44,4 +44,4 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_id"></a> [id](#output\_id) | The id of the created storage account |
-| <a name="output_primary_blob_endpoint "></a> [primary\_blob\_endpoint ](#output\_primary\_blob\_endpoint ) | The endpoint URL for blob storage in the primary location |
+| <a name="output_primary_blob_endpoint"></a> [primary\_blob\_endpoint](#output\_primary\_blob\_endpoint) | The endpoint URL for blob storage in the primary location |
