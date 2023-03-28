@@ -9,6 +9,6 @@ output "primary_blob_endpoint" {
 }
 
 output "container_id" {
-  value       = azurerm_storage_container.container[*].id
+  value       = var.container_info == {} ? null : azurerm_storage_container.container[*].id
   description = "The ID's of the Storage Container"
 }
