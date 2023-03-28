@@ -8,7 +8,7 @@ output "primary_blob_endpoint" {
   description = "The endpoint URL for blob storage in the primary location"
 }
 
-output "container_id" {
-  value       = var.container_info == {} ? null : azurerm_storage_container.container[*].id
-  description = "The ID's of the Storage Container"
+output "container_names" {
+  value       = var.container_info == {} ? null : azurerm_storage_container.container[*].name
+  description = "The names of the Storage Container that were created"
 }
