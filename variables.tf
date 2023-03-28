@@ -63,6 +63,7 @@ variable "network_acls" {
     service_endpoint_subnet_ids = list(string)
   })
   description = "Network & Firewall settings for storage account"
+  default     = null
 }
 
 variable "blob_versioning_enabled" {
