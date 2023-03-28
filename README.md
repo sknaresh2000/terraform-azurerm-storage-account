@@ -45,6 +45,5 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_container_names"></a> [container\_names](#output\_container\_names) | The names of the Storage Container that were created |
 | <a name="output_id"></a> [id](#output\_id) | The id of the created storage account |
 | <a name="output_primary_blob_endpoint"></a> [primary\_blob\_endpoint](#output\_primary\_blob\_endpoint) | The endpoint URL for blob storage in the primary location |
