@@ -38,3 +38,10 @@ resource "azurerm_private_endpoint" "pe" {
     subresource_names              = var.private_endpoint_sa_subresource_names
   }
 }
+
+resource "azurerm_storage_container" "container" {
+  for_each              = var.container_info
+  name                  = each.value.name
+  storage_account_name  = azurerm_storage_account.sa.name
+  container_access_type = each.value.container_access_type
+}

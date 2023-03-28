@@ -18,6 +18,7 @@ No modules.
 |------|------|
 | [azurerm_private_endpoint.pe](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/private_endpoint) | resource |
 | [azurerm_storage_account.sa](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_account) | resource |
+| [azurerm_storage_container.container](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/storage_container) | resource |
 
 ## Inputs
 
@@ -43,5 +44,6 @@ No modules.
 
 | Name | Description |
 |------|-------------|
+| <a name="output_container_id"></a> [container\_id](#output\_container\_id) | The ID's of the Storage Container |
 | <a name="output_id"></a> [id](#output\_id) | The id of the created storage account |
 | <a name="output_primary_blob_endpoint"></a> [primary\_blob\_endpoint](#output\_primary\_blob\_endpoint) | The endpoint URL for blob storage in the primary location |
