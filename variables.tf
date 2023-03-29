@@ -95,3 +95,12 @@ variable "container_info" {
   description = "Details about the containers that needs to be created"
   default     = {}
 }
+
+variable "private_dns_zone_info" {
+  type = object({
+    dns_zone_name = string
+    dns_zone_ids  = list(string)
+  })
+  description = "Details about DNS zones"
+  default     = null
+}

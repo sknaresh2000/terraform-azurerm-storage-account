@@ -37,6 +37,14 @@ resource "azurerm_private_endpoint" "pe" {
     is_manual_connection           = var.is_manual_connection
     subresource_names              = var.private_endpoint_sa_subresource_names
   }
+
+  dynamic "private_dns_zone_group" {
+    for_each = var.private_dns_zone_info != null ? [1] : []
+    content {
+      name                 = var.private_dns_zone_info.dns_zone_name
+      private_dns_zone_ids = var.private_dns_zone_info.dns_zone_ids
+    }
+  }
 }
 
 resource "azurerm_storage_container" "container" {
