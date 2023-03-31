@@ -57,7 +57,7 @@ variable "public_network_access_enabled" {
 
 variable "network_acls" {
   type = object({
-    bypass_services_info        = string
+    bypass_services_info        = list(string)
     default_action              = string
     allowed_ips                 = list(string)
     service_endpoint_subnet_ids = list(string)
