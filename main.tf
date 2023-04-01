@@ -10,7 +10,7 @@ resource "azurerm_storage_account" "sa" {
   public_network_access_enabled    = var.public_network_access_enabled
   tags                             = var.tags
   dynamic "network_rules" {
-    for_each = var.public_network_access_enabled == false && var.network_acls != null ? [1] : []
+    for_each = var.network_acls != null ? [1] : []
     content {
       bypass                     = var.network_acls.bypass_services_info
       default_action             = var.network_acls.default_action
